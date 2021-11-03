@@ -1,3 +1,6 @@
 KUBERNETES
 kubectl get pods // to get current pods
 kubectl port-forward <pod-name> <port>:<port> // open a port in ingress-nginx
+
+MINIKUBE
+minikube ip // to know the ip to be used in hosts file for ingress-service

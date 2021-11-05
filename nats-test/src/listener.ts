@@ -1,5 +1,5 @@
 import nats, { Message, Stan } from 'node-nats-streaming';
-import {Listener} from './events/base-listener'
+import { Listener } from '@omar48/common'
 import { randomBytes } from 'crypto'
 import { TicketCreatedListener } from './events/ticket-created-listener';
 

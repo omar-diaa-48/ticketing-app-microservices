@@ -24,6 +24,15 @@ spec:
                 secretKeyRef:
                   name: jwt-secret
                   key: JWT_KEY
+            - name: NATS_CLIENT_ID
+              # value: abc123bca
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: NATS_URL
+              value: 'http://nat-srv:4222'
+            - name: NATS_CLUSTER_ID
+              value: ticketing
 ---
 apiVersion: v1
 kind: Service
